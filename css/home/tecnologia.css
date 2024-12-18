@@ -28,7 +28,7 @@
   padding: 32px 0px;
 }
 
-.vantagem img {
+.tecnologia-vantagem img {
   height: 20%;
   padding: 0px;
 }
@@ -37,7 +37,7 @@
   text-transform: uppercase;
 }
 
-.vantagem {
+.tecnologia-vantagem {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -46,11 +46,11 @@
   padding-top: 80px;
 }
 
-.vantagem h3 {
+.tecnologia-vantagem h3 {
   padding-top: 8px;
 }
 
-.vantagens {
+.tecnologia-vantagens {
   display: flex;
   gap: 50px;
 }
@@ -68,7 +68,7 @@
     grid-template-columns: 1fr;
   }
 
-  .vantagem {
+  .tecnologia-vantagem {
     grid-row: 1;
   }
 
@@ -77,12 +77,12 @@
   }
 
   @media (max-width: 600px) {
-    .vantagens {
+    .tecnologia-vantagens {
       flex-direction: column;
       gap: 0px;
     }
 
-    .vantagem {
+    .tecnologia-vantagem {
       padding-top: 40px;
     }
   }
