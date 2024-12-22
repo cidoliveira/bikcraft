@@ -1,0 +1,140 @@
+.bicicletas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.bicicleta-imagem {
+  position: relative;
+}
+
+.bicicleta-preco {
+  background-color: var(--cor-12);
+  color: var(--cor-0);
+  padding: 8px 16px 8px 8px;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.bicicletas a {
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  align-self: flex-end;
+}
+
+.bicicletas a img {
+  width: 20px;
+  height: auto;
+  align-self: center;
+}
+
+.bicicletas a img:hover {
+  transform: translateX(4px);
+}
+
+.bicicleta-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bicicleta-container h2 {
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.bicicleta-container h2::before {
+  content: "";
+  width: 12px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  position: absolute;
+  margin-top: -8px;
+}
+
+.bicicleta-container p {
+  padding-bottom: 32px;
+  max-width: 40ch;
+}
+
+.bicicleta-container li {
+  display: flex;
+  margin-bottom: 16px;
+  align-items: center;
+  gap: 8px;
+}
+
+.bicicleta-container li img {
+  width: 20px;
+  height: 20px;
+}
+
+.bicicleta-descricao {
+  display: flex;
+  flex-direction: row;
+  gap: 160px;
+}
+
+.bg-preto {
+  background-color: var(--cor-11);
+  box-shadow: inset 600px 0px var(--cor-0);
+  width: 100vw;
+  padding: 5px;
+  position: relative;
+}
+
+.bicicletas-listagem {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+@media (max-width: 1200px) {
+  .bicicletas {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .bicicleta-descricao {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .bicicletas-listagem {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .bg-preto {
+    box-shadow: inset 0px 100px var(--cor-0);
+  }
+}
+
+@media (max-width: 800px) {
+  .bicicletas {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .bicicleta-descricao {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .bicicletas-listagem {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .bg-preto {
+    box-shadow: inset 0px 100px var(--cor-0);
+  }
+}
