@@ -117,11 +117,15 @@
 @media (max-width: 800px) {
   .bicicleta {
     grid-template-columns: 1fr;
-    padding-top: 40px;
+    padding-top: 0px;
     padding-bottom: 40px;
   }
   .bicicleta-imagens {
     grid-row: 2;
+  }
+
+  #preco {
+    text-transform: uppercase;
   }
 }
 
