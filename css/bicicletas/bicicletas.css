@@ -33,7 +33,7 @@
   align-self: center;
 }
 
-.bicicletas a img:hover {
+.bicicleta-descricao a:hover img {
   transform: translateX(4px);
 }
 
